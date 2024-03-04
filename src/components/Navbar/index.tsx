@@ -20,7 +20,7 @@ export default function Navbar() {
 						to='/'
 						onClick={() => setLocation('/')}
 					>
-						Início
+						INÍCIO
 					</Link>
 				</li>
 				<li>
@@ -32,7 +32,7 @@ export default function Navbar() {
 						to='/about'
 						onClick={() => setLocation('/about')}
 					>
-						Sobre
+						SOBRE
 					</Link>
 				</li>
 				<li>
@@ -44,7 +44,7 @@ export default function Navbar() {
 						to='/projects'
 						onClick={() => setLocation('/projects')}
 					>
-						Projetos
+						PROJETOS
 					</Link>
 				</li>
 			</ul>

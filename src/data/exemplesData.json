@@ -1,0 +1,22 @@
+[
+	{
+		"id": 1,
+		"period": "2023 - Atualmente",
+		"company": "Hospital de Cirurgia",
+		"position": "Analista de Sistemas"
+	},
+
+	{
+		"id": 2,
+		"period": "2021 - 2022",
+		"company": "Hospital de Cirurgia",
+		"position": "Estagiário de TI"
+	},
+
+	{
+		"id": 3,
+		"period": "2019 - 2020",
+		"company": "Hospital de Cirurgia",
+		"position": "Engenheiro Civil"
+	}
+]

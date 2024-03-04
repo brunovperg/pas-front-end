@@ -15,7 +15,7 @@
 	font-size: 2rem;
 
 	h2 {
-		font-size: 1.5rem;
+		font-size: 1.4rem;
 		margin-bottom: 100px;
 	}
 	ul {
@@ -31,23 +31,7 @@
 			.Link {
 				color: #fff;
 				text-decoration: none;
-				&.active:after {
-					content: '';
-					position: absolute;
-					left: 0;
-					bottom: 0;
-					height: 2px; /* thickness of underline */
-					width: 80%; /* updated width */
-					background: linear-gradient(
-						to right,
-						#ffb147,
-						#ff6c63,
-						#b86adf
-					);
-					transition: ease-in 0.3s; /* added transition */
-				}
-
-				&:hover:after {
+				&::after {
 					content: '';
 					position: absolute;
 					left: 0;
@@ -55,13 +39,18 @@
 					height: 2px; /* thickness of underline */
 					width: 0; /* updated width */
 					background: linear-gradient(
-						to right,
+						to left,
 						#ffb147,
 						#ff6c63,
 						#b86adf
 					);
-					width: 100%;
-					transition: ease-in 0.3s; /* added transition */
+					transition: width 0.2s ease-in-out; /* updated transition */
+				}
+				&:hover::after {
+					width: 85%;
+				}
+				&.active::after {
+					width: 85%;
 				}
 			}
 		}
