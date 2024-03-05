@@ -5,27 +5,27 @@
 
 		"url": "https://github.com/brunovperg/Pokedex",
 		"description": "Pokedex feito em React, com a possibilidade de pesquisar pokemons por nome ou número, e ver suas fraquezas e resistências.",
-		"imagePath": "src/assets/projectsImages/pokedex.jpeg"
+		"imagePath": "projectsImages/pokedex.jpeg"
 	},
 	{
 		"id": 2,
 		"title": "Calculadora Idade Gestacional",
 		"url": "https://github.com/brunovperg/idade-gestacional-react2",
 		"description": "Calculadora de idade gestacional, com a possibilidade de calcular a idade gestacional de acordo com a última menstruação ou de uma ultrassonogragria .",
-		"imagePath": "src/assets/projectsImages/age.png"
+		"imagePath": "projectsImages/age.png"
 	},
 	{
 		"id": 3,
 		"title": "Cardápio Restaurante",
 		"url": "https://github.com/brunovperg/alura-restaurant",
 		"description": "Cardápio de restaurante feito em React, com a possibilidade de filtrar por categorias e pesquisa.",
-		"imagePath": "src/assets/projectsImages/aluroni.png"
+		"imagePath": "projectsImages/aluroni.png"
 	},
 	{
 		"id": 4,
 		"title": "Temporizador Estudos",
 		"url": "https://github.com/brunovperg/alura-studies",
 		"description": "Temporizador para estudos feito em React, com a possibilidade de pausar, reiniciar e finalizar o tempo.",
-		"imagePath": "src/assets/projectsImages/studies.png"
+		"imagePath": "projectsImages/studies.png"
 	}
 ]
