@@ -1,17 +1,18 @@
 import style from './About.module.scss';
 import Navbar from 'components/Navbar';
-import perfiImage from 'assets/perfil.jpg';
+import perfilImage from 'assets/perfil.jpg';
 import curriculum from 'assets/Curriculum Bruno Pergentino.pdf';
 import { FaPhoneAlt, FaUser } from 'react-icons/fa';
 import { FaLocationDot, FaSquareArrowUpRight } from 'react-icons/fa6';
 import { TbMailFilled } from 'react-icons/tb';
 import exemples from 'data/exemplesData.json';
+import Button from 'components/Button';
 
 export default function About() {
 	return (
 		<>
 			<Navbar />
-			<div className={style.homeContainer}>
+			<div className={style.aboutContainer}>
 				<div className={style.row}>
 					<div className={style.welcomeContainer}>
 						<div className={style.welcomeText}>
@@ -19,7 +20,7 @@ export default function About() {
 							<h1>Seja bem-vindo!</h1>
 						</div>
 						<div className={style.welcomeImage}>
-							<img src={perfiImage} alt='' />
+							<img src={perfilImage} alt='' />
 						</div>
 						<h1>Bruno Pergentino</h1>
 						<h2>Desenvolvedor FullStack</h2>
@@ -87,6 +88,10 @@ export default function About() {
 							fullstack com experiência em desenvolvimento
 							de aplicações web e mobile.
 						</p>
+						<Button
+							text='Visite meu Github'
+							url='https://github.com/brunovperg'
+						/>
 					</div>
 					<div className={style.experienceRight}>
 						{exemples.map((exemple) => (

@@ -31,6 +31,9 @@
 			.Link {
 				color: #fff;
 				text-decoration: none;
+				&.active{
+					font-weight: bold;
+				}
 				&::after {
 					content: '';
 					position: absolute;

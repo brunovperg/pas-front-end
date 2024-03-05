@@ -1,0 +1,28 @@
+.projectElement {
+	display: inline-block;
+	display: flex;
+	width: 500px;
+	height: 248px;
+	text-align: justify;
+	.projectDetails {
+		display: flex;
+		max-width: 50%;
+		padding-right: 2rem;
+		flex-direction: column;
+		justify-content: space-between;
+
+		svg {
+			color: #000;
+			width: 4rem;
+			height: 4rem;
+			stroke: #000;
+		}
+	}
+	.projectImage {
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}

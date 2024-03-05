@@ -50,16 +50,6 @@ export default function Navbar() {
 			</ul>
 			<div className={style.socials}>
 				<div>
-					<FaLinkedin
-						onClick={() =>
-							window.open(
-								'https://www.linkedin.com/in/bruno-pergentino/',
-								'_blank'
-							)
-						}
-					/>
-				</div>
-				<div>
 					<FaGithub
 						onClick={() =>
 							window.open(
@@ -69,9 +59,22 @@ export default function Navbar() {
 						}
 					/>
 				</div>
+				<div>
+					<FaLinkedin
+						onClick={() =>
+							window.open(
+								'https://www.linkedin.com/in/bruno-pergentino/',
+								'_blank'
+							)
+						}
+					/>
+				</div>
 			</div>
 			<footer>
-				<p>Developed by Bruno</p>
+				<p>
+					Developed by <br />
+					Bruno Pergentino
+				</p>
 			</footer>
 		</nav>
 	);
