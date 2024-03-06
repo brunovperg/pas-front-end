@@ -78,19 +78,23 @@ export default function About() {
 							</p>
 						</div>
 						<div className={style.experienceTop}>
-							<div>
-								<h2>Experiência</h2>
-								<p>
-									Desenvolvedor FullStack com
-									experiência em desenvolvimento de
-									aplicações web e mobile.
-								</p>
-							</div>
-							<div>
-								<p>
-									Desenvolvimento de aplicações em
-									React, React Native e NodeJS.
-								</p>
+							<div className={style.row}>
+								<div>
+									<h2>Experiência</h2>
+									<p>
+										Desenvolvedor FullStack com
+										experiência em desenvolvimento
+										de aplicações web e mobile.
+									</p>
+								</div>
+								<div>
+									<h2>Experiência</h2>
+									<p>
+										Desenvolvimento de aplicações
+										em React, React Native e
+										NodeJS.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
