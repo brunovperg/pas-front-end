@@ -18,7 +18,7 @@ export default function Navbar() {
 				</button>
 			) : (
 				<button onClick={() => setIsOpened(!isOpened)}>
-					<GiHamburgerMenu size={50} />
+					<GiHamburgerMenu size={50} color='#000' />
 				</button>
 			)}
 			<nav
