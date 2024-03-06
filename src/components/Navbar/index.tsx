@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import style from './Navbar.module.scss';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -9,6 +9,24 @@ import { AiOutlineClose } from 'react-icons/ai';
 export default function Navbar() {
 	const [location, setLocation] = useState(window.location.pathname);
 	const [isOpened, setIsOpened] = useState(false);
+	const [lastScrollTop, setLastScrollTop] = useState(0);
+	const [showIcon, setShowIcon] = useState(true);
+
+	const handleScroll = () => {
+		const currentScrollTop = window.scrollY;
+		setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop); // For Mobile or negative scrolling
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll, { passive: true });
+
+		return () => {
+			window.removeEventListener('scroll', handleScroll);
+		};
+	}, []);
+	useEffect(() => {
+		setShowIcon(lastScrollTop <= 0);
+	}, [lastScrollTop]);
 
 	return (
 		<>
@@ -16,11 +34,18 @@ export default function Navbar() {
 				<button onClick={() => setIsOpened(!isOpened)}>
 					<AiOutlineClose size={50} color='#fff' />
 				</button>
-			) : (
-				<button onClick={() => setIsOpened(!isOpened)}>
+			) : !isOpened && showIcon ? (
+				<button
+					onClick={() => setIsOpened(!isOpened)}
+					className={classNames([
+						style.animateButton,
+						showIcon ? style.show : '',
+					])}
+					style={{ display: isOpened ? 'none' : '' }}
+				>
 					<GiHamburgerMenu size={50} color='#000' />
 				</button>
-			)}
+			) : null}
 			<nav
 				className={style.navbar}
 				style={{ display: isOpened ? 'flex' : 'none' }}
