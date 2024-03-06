@@ -1,9 +1,11 @@
 .projectElement {
-	display: inline-block;
 	display: flex;
 	width: 500px;
 	height: 248px;
 	text-align: justify;
+	border: 1px solid #000; // Add border style
+	padding: 1rem;
+
 	.projectDetails {
 		display: flex;
 		max-width: 50%;
@@ -19,10 +21,32 @@
 		}
 	}
 	.projectImage {
-		width: 100%;
-		height: 100%;
+		width: 200px;
+		height: 200px;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
+	}
+}
+
+@media (max-width: 768px) {
+	.projectElement {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		height: 100%;
+		width: 100%;
+		.projectDetails{
+			max-width: 100%;
+			h2{
+				align-self: center;
+			}
+		}
+		.projectImage{
+			width: 100%;
+			height: 400px;
+		}
 	}
 }

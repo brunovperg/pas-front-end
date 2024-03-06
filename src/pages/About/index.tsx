@@ -37,27 +37,43 @@ export default function About() {
 					<div className={style.content}>
 						<div className={style.contacts}>
 							<p>
-								<FaPhoneAlt
-									style={{ marginRight: '10px' }}
-								/>
+								<span>
+									<FaPhoneAlt
+										style={{
+											marginRight: '10px',
+										}}
+									/>
+								</span>
 								+55 75 99263-4230
 							</p>
 							<p>
-								<FaUser
-									style={{ marginRight: '10px' }}
-								/>
+								<span>
+									<FaUser
+										style={{
+											marginRight: '10px',
+										}}
+									/>
+								</span>
 								28 anos
 							</p>
 							<p>
-								<FaLocationDot
-									style={{ marginRight: '10px' }}
-								/>
+								<span>
+									<FaLocationDot
+										style={{
+											marginRight: '10px',
+										}}
+									/>
+								</span>
 								Aracaju - Sergipe
 							</p>
 							<p>
-								<TbMailFilled
-									style={{ marginRight: '10px' }}
-								/>
+								<span>
+									<TbMailFilled
+										style={{
+											marginRight: '10px',
+										}}
+									/>
+								</span>
 								brunovpergentino@gmail.com
 							</p>
 						</div>
