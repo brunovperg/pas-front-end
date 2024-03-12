@@ -11,17 +11,19 @@
 	align-items: flex-start;
 	color: #000;
 	padding: 3rem 3rem 0 6rem;
-	.row {
+	> .row {
 		display: flex;
 		flex-direction: row;
 		width: 100%;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 
 	.welcomeContainer {
 		text-align: left;
-		width: 50%;
+		margin-right: 2rem;
+
+		width: 30%;
 
 		.welcomeText {
 			text-align: left;
@@ -61,7 +63,7 @@
 			height: 8.5rem;
 			p {
 				height: fit-content;
-				flex-basis: 50%;
+				flex-basis: 40%;
 				font-size: 1.125rem;
 				font-style: italic;
 				font-weight: bold;
@@ -76,7 +78,7 @@
 			gap: 30px;
 			.row {
 				text-align: justify;
-				justify-content: center;
+				justify-content: flex-start;
 				display: flex;
 				flex-direction: row;
 				gap: 2rem;
@@ -158,6 +160,7 @@
 			flex-direction: column;
 			justify-content: center;
 			text-align: center;
+			margin-right: 0;
 			.welcomeImage {
 				img {
 					width: 100%;
@@ -180,9 +183,10 @@
 			}
 			.experienceTop {
 				margin: 0 0rem;
-				.row{
+				.row {
+					text-align: left;
 					gap: 1rem;
-					div{
+					div {
 						flex-basis: 100%;
 					}
 				}

@@ -12,11 +12,12 @@
 	.projects {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: space-around;
 		.project {
 			width: 500px;
 			min-height: fit-content;
 			margin-bottom: 2rem;
+			margin: 1rem
 		}
 	}
 	> a {

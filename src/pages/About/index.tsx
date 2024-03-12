@@ -82,17 +82,31 @@ export default function About() {
 								<div>
 									<h2>Experiência</h2>
 									<p>
-										Desenvolvedor FullStack com
-										experiência em desenvolvimento
-										de aplicações web e mobile.
+										Sou um desenvolvedor em
+										constante aprendizado e busco
+										me manter atualizado com as
+										últimas tecnologias.
+										Atualmente, estou praticando
+										REST API's para expandir meus
+										conhecimentos em
+										desenvolvimento FullStack.
+										Estou altamente motivado a
+										contribuir para projetos
+										desafiadores e crescer como
+										profissional.
 									</p>
 								</div>
 								<div>
-									<h2>Experiência</h2>
+									<h2>Entre em contato</h2>
 									<p>
-										Desenvolvimento de aplicações
-										em React, React Native e
-										NodeJS.
+										Estou sempre aberto a novas
+										oportunidades. Sinta-se à
+										vontade para entrar em contato
+										comigo através do meu perfil
+										do &nbsp;
+										<a href='https://linkedin.com/in/bruno-pergentino'>
+											LinkedIn
+										</a>
 									</p>
 								</div>
 							</div>

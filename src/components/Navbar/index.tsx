@@ -27,11 +27,16 @@ export default function Navbar() {
 	useEffect(() => {
 		setShowIcon(lastScrollTop <= 0);
 	}, [lastScrollTop]);
-
 	return (
 		<>
 			{isOpened ? (
-				<button onClick={() => setIsOpened(!isOpened)}>
+				<button
+					className={classNames([
+						style.animateButton,
+						showIcon ? style.show : '',
+					])}
+					onClick={() => setIsOpened(!isOpened)}
+				>
 					<AiOutlineClose size={50} color='#fff' />
 				</button>
 			) : !isOpened && showIcon ? (
@@ -46,6 +51,7 @@ export default function Navbar() {
 					<GiHamburgerMenu size={50} color='#000' />
 				</button>
 			) : null}
+
 			<nav
 				className={style.navbar}
 				style={{ display: isOpened ? 'flex' : 'none' }}
